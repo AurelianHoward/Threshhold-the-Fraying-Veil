@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://2fff1fuag2nn"]
+
+[ext_resource type="Script" uid="uid://exj4pmtw34at" path="res://new_script.gd" id="1_wtcfe"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_wtcfe"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Node" type="Node" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Node"]
+position = Vector2(259, 219)
+scale = Vector2(-264.784, -312.334)
+texture = SubResource("CanvasTexture_wtcfe")
+script = ExtResource("1_wtcfe")
