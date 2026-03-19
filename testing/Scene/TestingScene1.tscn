@@ -1,0 +1,56 @@
+[gd_scene load_steps=5 format=3 uid="uid://2fff1fuag2nn"]
+
+[ext_resource type="Script" uid="uid://exj4pmtw34at" path="res://Scripts/WorldSwap.gd" id="1_rcgcu"]
+[ext_resource type="PackedScene" uid="uid://cjqiithbmcn5j" path="res://Scene/Components/Player.tscn" id="2_t5bb0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_epypp"]
+size = Vector2(50.2296, 49.7186)
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_wtcfe"]
+
+[node name="TestingScene1" type="Node2D"]
+
+[node name="World" type="Node2D" parent="."]
+
+[node name="Life-World" type="Node2D" parent="World"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="World/Life-World"]
+position = Vector2(253, 357)
+scale = Vector2(0.940098, 0.0933747)
+skew = 2.13385e-05
+script = ExtResource("1_rcgcu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World/Life-World/StaticBody2D"]
+position = Vector2(14.8921, 32.1286)
+rotation = -3.14159
+scale = Vector2(5.29568, 6.24668)
+shape = SubResource("RectangleShape2D_epypp")
+
+[node name="Floor" type="Sprite2D" parent="World/Life-World/StaticBody2D/CollisionShape2D"]
+position = Vector2(0.0139198, -1.00287)
+scale = Vector2(50, 50)
+texture = SubResource("CanvasTexture_wtcfe")
+
+[node name="Death-world" type="Node2D" parent="World"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="World/Death-world"]
+visible = false
+position = Vector2(543, 360)
+scale = Vector2(0.940098, 0.0933747)
+skew = 2.13385e-05
+script = ExtResource("1_rcgcu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World/Death-world/StaticBody2D"]
+position = Vector2(-4.25488, 10.7094)
+rotation = -3.14159
+scale = Vector2(5.29568, 6.24668)
+shape = SubResource("RectangleShape2D_epypp")
+disabled = true
+
+[node name="Floor2" type="Sprite2D" parent="World/Death-world/StaticBody2D/CollisionShape2D"]
+position = Vector2(0.401733, -6.10352e-05)
+scale = Vector2(50, 50)
+texture = SubResource("CanvasTexture_wtcfe")
+
+[node name="Player" parent="World" instance=ExtResource("2_t5bb0")]
+position = Vector2(258, 261)
