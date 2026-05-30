@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://6qtylk2d5dve"]
+
+[ext_resource type="Script" uid="uid://bv2ij7ix3v2fb" path="res://Scripts/WorldManagement/WorldSwap2.gd" id="1_4rmsi"]
+[ext_resource type="Texture2D" uid="uid://c0y114ce7s0ow" path="res://Asset/WorldSprites/BiomeAlive/Platforms/Platform1.png" id="2_gadho"]
+[ext_resource type="Texture2D" uid="uid://duhbdrgb1uora" path="res://Asset/WorldSprites/BiomeAlive/Vegetation/Grass3.png" id="3_pmpfa"]
+[ext_resource type="Texture2D" uid="uid://b1rs5l8v4fbgk" path="res://Asset/WorldSprites/BiomeDead/PlatformsDead/Platform1_dead.png" id="4_kqxcs"]
+[ext_resource type="Texture2D" uid="uid://5ufehjbdfsy2" path="res://Asset/WorldSprites/BiomeDead/VegetationDead/Grass3_dead.png" id="5_35hgr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_epypp"]
+size = Vector2(40.333702, 177.44415)
+
+[node name="PlatformType1A" type="StaticBody2D" unique_id=302987560]
+scale = Vector2(0.940098, 0.0933747)
+skew = 2.13385e-05
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=717447110]
+position = Vector2(14.680051, 426.2393)
+rotation = -3.14159
+scale = Vector2(5.2956786, 6.2466784)
+shape = SubResource("RectangleShape2D_epypp")
+
+[node name="LifeRealmImage" type="Node2D" parent="." unique_id=1522741111]
+scale = Vector2(0.99999994, 0.99999994)
+script = ExtResource("1_4rmsi")
+
+[node name="Platform1" type="Sprite2D" parent="LifeRealmImage" unique_id=1191717270]
+position = Vector2(11.063293, 454.08398)
+scale = Vector2(0.2, 2)
+texture = ExtResource("2_gadho")
+
+[node name="Grass3" type="Sprite2D" parent="LifeRealmImage" unique_id=2096684003]
+position = Vector2(8.509752, 0)
+scale = Vector2(0.2, 2)
+texture = ExtResource("3_pmpfa")
+
+[node name="DeathRealmImage" type="Node2D" parent="." unique_id=1377138064]
+visible = false
+scale = Vector2(0.99999994, 0.99999994)
+script = ExtResource("1_4rmsi")
+
+[node name="Platform1Dead" type="Sprite2D" parent="DeathRealmImage" unique_id=685709781]
+position = Vector2(10.638143, 449.8007)
+scale = Vector2(0.20000003, 2.0000002)
+texture = ExtResource("4_kqxcs")
+
+[node name="Grass3Dead" type="Sprite2D" parent="DeathRealmImage" unique_id=2050110507]
+position = Vector2(8.509751, 0)
+scale = Vector2(0.20000003, 2.0000002)
+texture = ExtResource("5_35hgr")

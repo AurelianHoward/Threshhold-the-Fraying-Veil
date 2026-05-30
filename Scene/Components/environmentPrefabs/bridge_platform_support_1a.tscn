@@ -1,0 +1,69 @@
+[gd_scene format=3 uid="uid://b51celkhltwem"]
+
+[ext_resource type="Script" uid="uid://bv2ij7ix3v2fb" path="res://Scripts/WorldManagement/WorldSwap2.gd" id="1_gbsrd"]
+[ext_resource type="Texture2D" uid="uid://diegdq52p34s" path="res://Asset/WorldSprites/BiomeAlive/Platforms/Platform4.png" id="2_qyrba"]
+[ext_resource type="Texture2D" uid="uid://cu7ln3vf6c726" path="res://Asset/WorldSprites/BiomeAlive/Platforms/Platform5.png" id="3_qro0t"]
+[ext_resource type="Texture2D" uid="uid://kye1hdootdma" path="res://Asset/WorldSprites/BiomeDead/PlatformsDead/Platform4_dead.png" id="4_ei5hk"]
+[ext_resource type="Texture2D" uid="uid://dv0nng4bivbup" path="res://Asset/WorldSprites/BiomeDead/PlatformsDead/Platform5_dead.png" id="5_oyvmw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_c3i1d"]
+size = Vector2(950.5, 252.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rldxw"]
+size = Vector2(22.784273, 826)
+
+[node name="BridgePlatformSupport1A" type="StaticBody2D" unique_id=826458977]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=787809738]
+position = Vector2(-0.25, -125.25)
+shape = SubResource("RectangleShape2D_c3i1d")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="." unique_id=1980781653]
+position = Vector2(3.9999886, 406)
+scale = Vector2(16.853731, 1)
+shape = SubResource("RectangleShape2D_rldxw")
+
+[node name="LifeRealmImage" type="Node2D" parent="." unique_id=824559022]
+script = ExtResource("1_gbsrd")
+
+[node name="Platform4" type="Sprite2D" parent="LifeRealmImage" unique_id=1163039909]
+position = Vector2(244, 2)
+texture = ExtResource("2_qyrba")
+
+[node name="Platform7" type="Sprite2D" parent="LifeRealmImage" unique_id=530624299]
+position = Vector2(-239, 1)
+texture = ExtResource("2_qyrba")
+flip_h = true
+
+[node name="Platform8" type="Sprite2D" parent="LifeRealmImage" unique_id=356450987]
+position = Vector2(-68, 529)
+rotation = 1.5707964
+texture = ExtResource("3_qro0t")
+
+[node name="Platform9" type="Sprite2D" parent="LifeRealmImage" unique_id=1723479056]
+position = Vector2(66, 507)
+rotation = -1.5707964
+texture = ExtResource("3_qro0t")
+
+[node name="DeathRealmImage" type="Node2D" parent="." unique_id=1268204163]
+visible = false
+script = ExtResource("1_gbsrd")
+
+[node name="Platform4Dead" type="Sprite2D" parent="DeathRealmImage" unique_id=95246572]
+position = Vector2(242, -4)
+texture = ExtResource("4_ei5hk")
+
+[node name="Platform4Dead2" type="Sprite2D" parent="DeathRealmImage" unique_id=282868490]
+position = Vector2(-242, -5)
+texture = ExtResource("4_ei5hk")
+flip_h = true
+
+[node name="Platform5Dead" type="Sprite2D" parent="DeathRealmImage" unique_id=1631410376]
+position = Vector2(-67, 529)
+rotation = 1.5707964
+texture = ExtResource("5_oyvmw")
+
+[node name="Platform5Dead2" type="Sprite2D" parent="DeathRealmImage" unique_id=1979579948]
+position = Vector2(67, 506)
+rotation = -1.5707964
+texture = ExtResource("5_oyvmw")

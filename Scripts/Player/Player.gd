@@ -24,9 +24,7 @@ enum State {
 
 
 @export_category("Jump And Walls")
-@export var wall_coyote_time: float = 0.15  
-@export var jump_buffer_time: float = 0.15  
-@export var short_hop_multiplier: float = 0.5 
+@export var wall_coyote_time: float = 0.15   
 @export var coyote_time: float = 0.1 
 
 var wall_coyote_timer: float = 0.0
@@ -54,11 +52,6 @@ func _physics_process(delta: float) -> void:
 	else:
 		coyote_timer = max(coyote_timer - delta, 0)
 
-	if Input.is_action_just_pressed("Mjump"):
-		jump_buffer_timer = jump_buffer_time
-	else:
-		jump_buffer_timer = max(jump_buffer_timer - delta, 0)
-
 	if not is_on_floor() and not is_wall_sliding:
 		velocity.y += gravity * delta
 
@@ -84,13 +77,9 @@ func _handle_movement() -> void:
 	velocity.x = input_direction.x * move_speed
 
 func _handle_jump() -> void:
-	if jump_buffer_timer > 0 and coyote_timer > 0:
+	if Input.is_action_just_pressed("Mjump") and coyote_timer > 0:
 		velocity.y = jump_velocity
-		jump_buffer_timer = 0
 		coyote_timer = 0
-
-	if Input.is_action_just_released("Mjump") and velocity.y < 0:
-		velocity.y *= short_hop_multiplier
 
 func _handle_dash_input() -> void:
 	if Input.is_action_just_pressed("Mdash") and not is_dashing:
@@ -112,7 +101,7 @@ func _handle_wall_slide() -> void:
 		velocity.y = min(velocity.y, wall_slide_speed)
 
 func _handle_wall_jump() -> void:
-	if jump_buffer_timer > 0.0 and wall_coyote_timer > 0.0:
+	if  wall_coyote_timer > 0.0:
 		var wall_normal = get_wall_normal()
 
 
@@ -125,9 +114,6 @@ func _handle_wall_jump() -> void:
 
 
 		facing_direction = sign(velocity.x)
-
-
-		jump_buffer_timer = 0.0
 		wall_coyote_timer = 0.0
 		is_wall_sliding = false
 

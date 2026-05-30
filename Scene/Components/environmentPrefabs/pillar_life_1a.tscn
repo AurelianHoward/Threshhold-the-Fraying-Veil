@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://dom8xa1basdhj"]
+
+[ext_resource type="Texture2D" uid="uid://bsn027rj5i0rb" path="res://Asset/WorldSprites/BiomeAlive/Platforms/PlatformPillar1.png" id="1_hyqhg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xjwml"]
+size = Vector2(46, 113)
+
+[node name="PillarLife1A" type="StaticBody2D" unique_id=297131962]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1742590930]
+position = Vector2(-1, 44.5)
+shape = SubResource("RectangleShape2D_xjwml")
+
+[node name="Image" type="Node2D" parent="." unique_id=2108227329]
+
+[node name="PlatformPillar1" type="Sprite2D" parent="Image" unique_id=286318705]
+position = Vector2(-6, 52)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_hyqhg")
+
+[node name="PlatformPillar2" type="Sprite2D" parent="Image" unique_id=748547522]
+position = Vector2(3.999999, 51)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_hyqhg")
+flip_h = true

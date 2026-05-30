@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://bb81fthcf74cw"]
+
+[ext_resource type="Script" uid="uid://exj4pmtw34at" path="res://Scripts/WorldManagement/WorldSwap.gd" id="1_4ts7w"]
+[ext_resource type="Texture2D" uid="uid://dv0nng4bivbup" path="res://Asset/WorldSprites/BiomeDead/PlatformsDead/Platform5_dead.png" id="1_t0knd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t0knd"]
+size = Vector2(586, 178.5)
+
+[node name="DeathBrickBridge" type="StaticBody2D" unique_id=1754597209]
+script = ExtResource("1_4ts7w")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1668066640]
+position = Vector2(-11, -151.25)
+shape = SubResource("RectangleShape2D_t0knd")
+
+[node name="Platform5Dead" type="Sprite2D" parent="." unique_id=837472123]
+texture = ExtResource("1_t0knd")
