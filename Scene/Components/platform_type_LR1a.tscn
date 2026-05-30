@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://6qtylk2d5dve"]
+
+[ext_resource type="Script" uid="uid://exj4pmtw34at" path="res://Scripts/WorldManagement/WorldSwap.gd" id="1_641i6"]
+[ext_resource type="Texture2D" uid="uid://c0y114ce7s0ow" path="res://Asset/WorldSprites/BiomeAlive/Platforms/Platform1.png" id="2_gadho"]
+[ext_resource type="Texture2D" uid="uid://bki7vagmqht54" path="res://Asset/WorldSprites/BiomeAlive/Vegetation/Bush3.png" id="3_gadho"]
+[ext_resource type="Texture2D" uid="uid://duhbdrgb1uora" path="res://Asset/WorldSprites/BiomeAlive/Vegetation/Grass3.png" id="3_pmpfa"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_epypp"]
+size = Vector2(40.333702, 177.44415)
+
+[node name="PlatformType1A" type="StaticBody2D" unique_id=302987560]
+scale = Vector2(0.940098, 0.0933747)
+skew = 2.13385e-05
+script = ExtResource("1_641i6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=717447110]
+position = Vector2(14.680051, 426.2393)
+rotation = -3.14159
+scale = Vector2(5.2956786, 6.2466784)
+shape = SubResource("RectangleShape2D_epypp")
+
+[node name="Image" type="Node2D" parent="." unique_id=1522741111]
+scale = Vector2(0.99999994, 0.99999994)
+
+[node name="Platform1" type="Sprite2D" parent="Image" unique_id=1191717270]
+position = Vector2(11.063293, 454.08398)
+scale = Vector2(0.21274376, 2.1419077)
+texture = ExtResource("2_gadho")
+
+[node name="Bush3" type="Sprite2D" parent="Image" unique_id=731908415]
+position = Vector2(76.58691, -406.96252)
+scale = Vector2(0.122557975, 0.74011004)
+texture = ExtResource("3_gadho")
+
+[node name="Grass3" type="Sprite2D" parent="Image" unique_id=2096684003]
+position = Vector2(8.509399, -139.22437)
+scale = Vector2(0.21274377, 2.1419077)
+texture = ExtResource("3_pmpfa")

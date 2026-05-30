@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://cjqiithbmcn5j"]
+
+[ext_resource type="Script" uid="uid://cpg64hgo5nn7u" path="res://Scripts/Player/Player.gd" id="1_o4mqb"]
+[ext_resource type="SpriteFrames" uid="uid://d30fqtepd7pqq" path="res://Asset/PlayerSprites/PlayerSpriteFrames.tres" id="2_o4mqb"]
+[ext_resource type="Script" uid="uid://3egkvy1x1vnm" path="res://Scripts/WorldManagement/CameraFollow.gd" id="3_utmqf"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_utmqf"]
+radius = 243.74982
+height = 1585.1698
+
+[node name="Player" type="CharacterBody2D" unique_id=2055657918]
+scale = Vector2(1.280001, 0.49710765)
+script = ExtResource("1_o4mqb")
+
+[node name="CameraTarget" type="Node2D" parent="." unique_id=6704093]
+
+[node name="Sprite" type="AnimatedSprite2D" parent="." unique_id=1952600767]
+sprite_frames = ExtResource("2_o4mqb")
+animation = &"Idle"
+speed_scale = 2.5
+
+[node name="CameraRig" type="Node2D" parent="." unique_id=1110966034]
+
+[node name="FollowingCamera" type="Camera2D" parent="CameraRig" unique_id=1964773404 node_paths=PackedStringArray("player")]
+offset = Vector2(0, -50)
+process_callback = 0
+position_smoothing_enabled = true
+script = ExtResource("3_utmqf")
+player = NodePath("../..")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1453840892]
+position = Vector2(-179.68736, -26.151278)
+scale = Vector2(0.99135095, 1)
+shape = SubResource("CapsuleShape2D_utmqf")
