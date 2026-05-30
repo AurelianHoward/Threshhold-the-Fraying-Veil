@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://3b22tjme24ei" path="res://Asset/WorldSprites/BiomeDead/Background_dead.png" id="6_ofx4i"]
 [ext_resource type="PackedScene" uid="uid://b51celkhltwem" path="res://Scene/Components/environmentPrefabs/bridge_platform_support_1a.tscn" id="8_lfbnc"]
 [ext_resource type="PackedScene" uid="uid://bb81fthcf74cw" path="res://Scene/Components/environmentPrefabs/death_brick_bridge.tscn" id="10_d8c13"]
+[ext_resource type="PackedScene" uid="uid://dom8xa1basdhj" path="res://Scene/Components/environmentPrefabs/pillar_life_1a.tscn" id="12_xb73i"]
 [ext_resource type="PackedScene" uid="uid://lxuh3eykob83" path="res://Scene/Components/environmentPrefabs/pillar_death_1a.tscn" id="13_xj5bp"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4qlvd"]
@@ -162,6 +163,10 @@ wall_jump_velocity = Vector2(700, -700)
 [node name="Life-World" type="Node2D" parent="World" unique_id=1471109549]
 scale = Vector2(5, 5)
 
+[node name="PillarLife1A" parent="World/Life-World" unique_id=297131962 instance=ExtResource("12_xb73i")]
+position = Vector2(190.59999, 183.19998)
+scale = Vector2(0.99999994, 0.99999994)
+
 [node name="Death-world" type="Node2D" parent="World" unique_id=1811960044]
 scale = Vector2(5, 5)
 
@@ -185,6 +190,11 @@ visible = false
 position = Vector2(-278.6, 400)
 scale = Vector2(0.19999999, 0.19999999)
 
+[node name="PillarDeath1A" parent="World/Death-world" unique_id=1541464306 instance=ExtResource("13_xj5bp")]
+visible = false
+position = Vector2(294, 246.79999)
+scale = Vector2(0.99999994, 0.99999994)
+
 [node name="Life&Death" type="Node2D" parent="World" unique_id=702740745]
 
 [node name="PlatformType1A" parent="World/Life&Death" unique_id=302987560 instance=ExtResource("2_gqi4c")]
@@ -197,6 +207,10 @@ position = Vector2(-2123, 2000)
 [node name="BridgePlatformSupport1A2" parent="World/Life&Death" unique_id=660524742 instance=ExtResource("8_lfbnc")]
 position = Vector2(865, 2000)
 
+[node name="BridgePlatformSupport1A3" parent="World/Life&Death" unique_id=1611691046 instance=ExtResource("8_lfbnc")]
+position = Vector2(947.99994, 319)
+scale = Vector2(0.7, 0.7)
+
 [node name="OutOfBounds" type="Area2D" parent="World" unique_id=1953843858]
 position = Vector2(50.999996, 3759)
 scale = Vector2(670000.4, 50.92)
@@ -207,8 +221,6 @@ position = Vector2(1.5569491, 0)
 scale = Vector2(1.0000001, 1)
 shape = SubResource("RectangleShape2D_4qlvd")
 
-[node name="PillarDeath1A" parent="." unique_id=1541464306 instance=ExtResource("13_xj5bp")]
-position = Vector2(1470.0001, 1234)
-scale = Vector2(5, 5)
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1743994617]
 
 [connection signal="body_entered" from="World/OutOfBounds" to="World/OutOfBounds" method="_on_body_entered"]
