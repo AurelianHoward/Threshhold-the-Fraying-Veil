@@ -477,7 +477,7 @@ scale = Vector2(0.5, 0.5)
 
 [node name="DeathBrickBridge8" parent="World/Death-world" unique_id=1926339808 instance=ExtResource("10_d8c13")]
 visible = false
-position = Vector2(-1028.4, -187)
+position = Vector2(-1097.2001, -181.2)
 scale = Vector2(0.5, 0.5)
 
 [node name="DeathBrickBridge9" parent="World/Death-world" unique_id=1354370179 instance=ExtResource("10_d8c13")]

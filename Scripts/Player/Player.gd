@@ -83,7 +83,9 @@ func _physics_process(delta: float) -> void:
 
 func _handle_movement() -> void:
 	var input_direction: Vector2 = Input.get_vector("Mleft","Mright", "Mup", "Mdown")
-	###velocity.x = 
+	velocity.x = input_direction.x * move_speed
+	if input_direction.x != 0:
+		facing_direction = sign(input_direction.x)
 
 func _handle_jump() -> void:
 	if jump_buffer_timer > 0 and coyote_timer > 0:
@@ -95,7 +97,7 @@ func _handle_dash_input() -> void:
 	if Input.is_action_just_pressed("Mdash") and not is_dashing:
 		is_dashing = true
 		dash_timer = dash_duration
-		velocity.x = direction * dash_speed
+		velocity.x = facing_direction * dash_speed
 		velocity.y = 0
 
 func _handle_dash(delta: float) -> void:
