@@ -218,5 +218,8 @@ offset_right = 1147.0
 offset_bottom = 535.0
 text = "Made by Aurelian Howard"
 
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1677818567]
+position = Vector2(371, 221)
+
 [connection signal="pressed" from="VBoxContainer/PlayButton" to="." method="_on_play_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]

@@ -22,12 +22,13 @@ speed_scale = 2.5
 [node name="CameraRig" type="Node2D" parent="." unique_id=1110966034]
 
 [node name="FollowingCamera" type="Camera2D" parent="CameraRig" unique_id=1964773404 node_paths=PackedStringArray("player")]
-scale = Vector2(0.2, 0.2)
 offset = Vector2(0, -50)
 process_callback = 0
 position_smoothing_enabled = true
 script = ExtResource("3_utmqf")
 player = NodePath("../..")
+base_zoom = Vector2(0.85, 0.85)
+zoom_speed = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1453840892]
 position = Vector2(-179.68736, -26.151278)

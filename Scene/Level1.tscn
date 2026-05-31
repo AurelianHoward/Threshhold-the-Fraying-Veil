@@ -56,9 +56,6 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_50d7b"]
 size = Vector2(3987, 781)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_i8m3p"]
-size = Vector2(523, 1664)
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qblvq"]
 size = Vector2(274.9536, 3644)
 
@@ -245,6 +242,20 @@ position = Vector2(2177, 3312)
 scale = Vector2(3.0837402, 2)
 texture = ExtResource("1_10jwb")
 
+[node name="Grave6" type="Node2D" parent="World/TheTreeOfSouls" unique_id=1271943076]
+position = Vector2(-1106, 1090)
+scale = Vector2(2, 2)
+
+[node name="Grave2Dead" type="Sprite2D" parent="World/TheTreeOfSouls/Grave6" unique_id=148268694]
+texture = ExtResource("13_lqlsm")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="World/TheTreeOfSouls/Grave6/Grave2Dead" unique_id=625068350]
+offset_left = -59.0
+offset_top = -62.0
+offset_right = 53.0
+offset_bottom = 129.0
+text = "You have reached the tree of souls and beaten the game."
+
 [node name="TreeOfSouls" type="Sprite2D" parent="World/TheTreeOfSouls" unique_id=789791730]
 position = Vector2(-346, 254)
 scale = Vector2(3, 3)
@@ -336,12 +347,6 @@ texture = ExtResource("33_k0rms")
 position = Vector2(-1259, 1171)
 texture = ExtResource("34_qkgfv")
 
-[node name="Area2D" type="Area2D" parent="World/TheTreeOfSouls" unique_id=1817403476]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="World/TheTreeOfSouls/Area2D" unique_id=900221318]
-position = Vector2(-197.5, 236)
-shape = SubResource("RectangleShape2D_i8m3p")
-
 [node name="Decoration" type="Node2D" parent="World" unique_id=46339588]
 
 [node name="TreeFull1" type="Sprite2D" parent="World/Decoration" unique_id=1568724763]
@@ -384,10 +389,10 @@ texture = ExtResource("13_lqlsm")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="World/Decoration/Grave2/Grave2Dead" unique_id=631575530]
 offset_left = -59.0
-offset_top = 2.0
+offset_top = -62.0
 offset_right = 53.0
 offset_bottom = 129.0
-text = "May all those who fell here rest in peace. "
+text = "Your goal is to reach the tree of souls to the far right of the map. "
 
 [node name="Grave5" type="Node2D" parent="World/Decoration" unique_id=2028605989]
 
@@ -433,7 +438,7 @@ scale = Vector2(0.9999999, 0.9999999)
 
 [node name="Player" parent="World" unique_id=2137926258 instance=ExtResource("3_ruose")]
 position = Vector2(-11408.999, -3660.9995)
-scale = Vector2(0.1, 0.1)
+scale = Vector2(0.15, 0.15)
 move_speed = 700.0
 jump_velocity = -1000.0
 dash_speed = 2000.0
