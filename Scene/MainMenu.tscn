@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://dawxbb1vd2cso"]
+
+[node name="MarginContainer" type="MarginContainer" unique_id=2001073051]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Title" type="TextureRect" parent="." unique_id=1046754183]
+layout_mode = 2
+
+[node name="Play Game" type="TextureRect" parent="." unique_id=2040922033]
+layout_mode = 2
+
+[node name="Quit Game" type="TextureRect" parent="." unique_id=787860579]
+layout_mode = 2

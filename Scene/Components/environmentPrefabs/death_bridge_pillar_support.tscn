@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://butcslyt06j3x"]
+
+[ext_resource type="Script" uid="uid://exj4pmtw34at" path="res://Scripts/WorldManagement/WorldSwap.gd" id="1_vmns2"]
+[ext_resource type="Texture2D" uid="uid://kye1hdootdma" path="res://Asset/WorldSprites/BiomeDead/PlatformsDead/Platform4_dead.png" id="2_kya6l"]
+[ext_resource type="Texture2D" uid="uid://dv0nng4bivbup" path="res://Asset/WorldSprites/BiomeDead/PlatformsDead/Platform5_dead.png" id="3_tj3m0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hq80s"]
+size = Vector2(959, 1906)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dens5"]
+size = Vector2(2357, 801)
+
+[node name="DeathBridgePillarSupport" type="StaticBody2D" unique_id=1585018090]
+script = ExtResource("1_vmns2")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="." unique_id=1423773195]
+position = Vector2(405.5, -963)
+shape = SubResource("RectangleShape2D_hq80s")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1720318679]
+position = Vector2(385.5, 390.5)
+shape = SubResource("RectangleShape2D_dens5")
+
+[node name="Platform4Dead2" type="Sprite2D" parent="." unique_id=424989872]
+position = Vector2(971.9999, 172.99998)
+rotation = 3.1415925
+scale = Vector2(2.5, 2.5)
+texture = ExtResource("2_kya6l")
+flip_h = true
+
+[node name="Platform4Dead" type="Sprite2D" parent="." unique_id=929141330]
+position = Vector2(-206.99998, 207.99998)
+rotation = 3.1415925
+scale = Vector2(2.5, 2.5)
+texture = ExtResource("2_kya6l")
+
+[node name="Platform5Dead" type="Sprite2D" parent="." unique_id=381246211]
+position = Vector2(579, -1141.0001)
+rotation = -1.5707964
+scale = Vector2(2.6, 2.6)
+texture = ExtResource("3_tj3m0")
+
+[node name="Platform5Dead2" type="Sprite2D" parent="." unique_id=329885050]
+position = Vector2(214, -1130)
+rotation = -1.5707964
+scale = Vector2(2.6, 2.6)
+texture = ExtResource("3_tj3m0")
+flip_h = true
+flip_v = true

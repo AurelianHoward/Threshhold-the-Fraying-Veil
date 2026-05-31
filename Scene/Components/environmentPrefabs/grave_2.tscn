@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://bhupgy5oqgh4t"]
+
+[ext_resource type="Texture2D" uid="uid://dt6o8w7l5edpt" path="res://Asset/WorldSprites/BiomeDead/GravesDead/Grave2_dead.png" id="1_88qpr"]
+
+[node name="Grave2" type="Node2D" unique_id=866669027]
+
+[node name="Grave2Dead" type="Sprite2D" parent="." unique_id=1992830002]
+position = Vector2(-8791, -3515)
+texture = ExtResource("1_88qpr")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=624535145]
+offset_right = 40.0
+offset_bottom = 40.0

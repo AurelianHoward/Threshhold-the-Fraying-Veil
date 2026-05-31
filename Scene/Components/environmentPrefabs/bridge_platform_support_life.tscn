@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://cosjtejsra3p"]
+
+[ext_resource type="Texture2D" uid="uid://diegdq52p34s" path="res://Asset/WorldSprites/BiomeAlive/Platforms/Platform4.png" id="1_p5mkr"]
+[ext_resource type="Texture2D" uid="uid://cu7ln3vf6c726" path="res://Asset/WorldSprites/BiomeAlive/Platforms/Platform5.png" id="2_1tw0m"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3wb8n"]
+size = Vector2(959, 1379)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kc4n8"]
+size = Vector2(2366, 436)
+
+[node name="BridgePlatformSupportLife" type="StaticBody2D" unique_id=997946291]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="." unique_id=2042218079]
+position = Vector2(3.5, -396.5)
+shape = SubResource("RectangleShape2D_3wb8n")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=622420428]
+position = Vector2(-27, 425)
+shape = SubResource("RectangleShape2D_kc4n8")
+
+[node name="Platform4" type="Sprite2D" parent="." unique_id=1643612254]
+position = Vector2(615, 44)
+scale = Vector2(2.5, 2.5)
+texture = ExtResource("1_p5mkr")
+flip_v = true
+
+[node name="Platform5" type="Sprite2D" parent="." unique_id=1930323773]
+position = Vector2(-580, 58)
+scale = Vector2(2.5, 2.5)
+texture = ExtResource("1_p5mkr")
+flip_h = true
+flip_v = true
+
+[node name="Platform6" type="Sprite2D" parent="." unique_id=2079158150]
+position = Vector2(152, -996.0001)
+rotation = -1.5707964
+scale = Vector2(2.5, 2.5)
+texture = ExtResource("2_1tw0m")
+
+[node name="Platform7" type="Sprite2D" parent="." unique_id=1251823952]
+position = Vector2(-185.99902, -996.0001)
+rotation = -1.5707964
+scale = Vector2(2.5, 2.5)
+texture = ExtResource("2_1tw0m")
+flip_v = true

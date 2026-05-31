@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://doyorvepe1jhf"]
+
+[ext_resource type="Script" uid="uid://bv2ij7ix3v2fb" path="res://Scripts/WorldManagement/WorldSwap2.gd" id="1_4t1uk"]
+[ext_resource type="Texture2D" uid="uid://ci4012hko5jgt" path="res://Asset/WorldSprites/BiomeAlive/Graves/Grave5.png" id="2_5g7tk"]
+
+[node name="Grave1" type="Node2D" unique_id=1596923117]
+scale = Vector2(0.19999997, 0.19999997)
+script = ExtResource("1_4t1uk")
+
+[node name="Grave5" type="Sprite2D" parent="." unique_id=948675224]
+texture = ExtResource("2_5g7tk")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Grave5" unique_id=743635936]
+offset_left = -113.0
+offset_top = -114.00006
+offset_right = 85.0
+offset_bottom = 81.99994
+text = "Move by wsad, arrow keys or left joystick on controller. 
+
+Jump Is space or buttom button on a controller."
+tab_size = 10

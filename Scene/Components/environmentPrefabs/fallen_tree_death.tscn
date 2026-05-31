@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://cov0h4un8trgo"]
+
+[ext_resource type="Script" uid="uid://exj4pmtw34at" path="res://Scripts/WorldManagement/WorldSwap.gd" id="1_gsrgo"]
+[ext_resource type="Texture2D" uid="uid://1rxtib7cgsj6" path="res://Asset/WorldSprites/BiomeDead/PlatformsDead/Platform6_dead.png" id="2_vb3i8"]
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_qkgfv"]
+a = Vector2(-140, -15)
+b = Vector2(2454, -225)
+
+[node name="FallenTreeDeath" type="StaticBody2D" unique_id=1593230747]
+scale = Vector2(0.19999999, 0.19999999)
+script = ExtResource("1_gsrgo")
+
+[node name="Platform6Dead" type="Sprite2D" parent="." unique_id=1788830832]
+texture = ExtResource("2_vb3i8")
+
+[node name="Platform6Dead2" type="Sprite2D" parent="." unique_id=1220426773]
+position = Vector2(1305, -108)
+texture = ExtResource("2_vb3i8")
+
+[node name="Platform6Dead3" type="Sprite2D" parent="." unique_id=2006090123]
+position = Vector2(655, -53)
+texture = ExtResource("2_vb3i8")
+
+[node name="Platform6Dead4" type="Sprite2D" parent="." unique_id=40055169]
+position = Vector2(1946, -163)
+texture = ExtResource("2_vb3i8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1469269212]
+position = Vector2(-165, 64)
+shape = SubResource("SegmentShape2D_qkgfv")

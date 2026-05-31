@@ -165,7 +165,7 @@ func _update_animation() -> void:
 			if animated_sprite.animation != "Dash":
 				animated_sprite.play("Dash")
 func respawn():
-	self.global_position = Vector2(-3460.0, 1592.0)
+	self.global_position = Vector2(-11313.0, -3689.0)
 
 func _flip_sprite() -> void:
 	if velocity.x >= 1:
