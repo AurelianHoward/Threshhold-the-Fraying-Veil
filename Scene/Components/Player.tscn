@@ -22,6 +22,7 @@ speed_scale = 2.5
 [node name="CameraRig" type="Node2D" parent="." unique_id=1110966034]
 
 [node name="FollowingCamera" type="Camera2D" parent="CameraRig" unique_id=1964773404 node_paths=PackedStringArray("player")]
+scale = Vector2(0.2, 0.2)
 offset = Vector2(0, -50)
 process_callback = 0
 position_smoothing_enabled = true

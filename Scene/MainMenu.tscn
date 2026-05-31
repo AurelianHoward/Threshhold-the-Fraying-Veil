@@ -1,6 +1,30 @@
 [gd_scene format=3 uid="uid://dawxbb1vd2cso"]
 
 [ext_resource type="Script" uid="uid://ckhacm2pnwkjn" path="res://Scripts/main_menu.gd" id="1_rrxvj"]
+[ext_resource type="Texture2D" uid="uid://nydcsqef3fio" path="res://Asset/WorldSprites/BiomeDead/SkyBox_dead.png" id="2_k4ove"]
+[ext_resource type="Texture2D" uid="uid://dpfnyejojcke" path="res://Asset/WorldSprites/BiomeAlive/Trees/TreeFull1.png" id="2_vbdn0"]
+[ext_resource type="Texture2D" uid="uid://cyr5ij8834dg7" path="res://Asset/WorldSprites/BiomeAlive/Background.png" id="3_eami7"]
+[ext_resource type="Texture2D" uid="uid://cy3q6w07xq74a" path="res://Asset/WorldSprites/BiomeAlive/Vegetation/Grass1.png" id="3_x2pvq"]
+[ext_resource type="Texture2D" uid="uid://dumbrk8gvyg4" path="res://Asset/WorldSprites/BiomeAlive/Vegetation/Flower2.png" id="4_dedtc"]
+[ext_resource type="Texture2D" uid="uid://qdl7jnohhaxf" path="res://Asset/WorldSprites/BiomeDead/TreesDead/Tree2_dead.png" id="4_du3yi"]
+[ext_resource type="Texture2D" uid="uid://drpbfa4ovo6j4" path="res://Asset/WorldSprites/BiomeAlive/Graves/Grave3.png" id="4_mbc7s"]
+[ext_resource type="Texture2D" uid="uid://cd4k1a6nv5oen" path="res://Asset/WorldSprites/BiomeDead/TreesDead/TreeVegetation1_dead.png" id="5_55g6a"]
+[ext_resource type="Texture2D" uid="uid://dfad3j0xss0" path="res://Asset/WorldSprites/BiomeAlive/Vegetation/Flower1.png" id="5_fs4h1"]
+[ext_resource type="Texture2D" uid="uid://diyllubsisqlm" path="res://Asset/WorldSprites/BiomeDead/GravesDead/Grave5_dead.png" id="5_kmbo7"]
+[ext_resource type="Texture2D" uid="uid://b2lbvjk2m5bqo" path="res://Asset/WorldSprites/BiomeAlive/Vegetation/Flower5.png" id="6_mbc7s"]
+[ext_resource type="Texture2D" uid="uid://ddigqg4tjpi25" path="res://Asset/WorldSprites/BiomeDead/TreesDead/TreeVegetation3_dead.png" id="6_p3x8m"]
+[ext_resource type="Texture2D" uid="uid://dt6o8w7l5edpt" path="res://Asset/WorldSprites/BiomeDead/GravesDead/Grave2_dead.png" id="6_urss4"]
+[ext_resource type="Texture2D" uid="uid://cuxmi7f3q4mqw" path="res://Asset/WorldSprites/BiomeDead/GravesDead/Grave3_dead.png" id="7_1c2rm"]
+[ext_resource type="Texture2D" uid="uid://csjqaro3ypawv" path="res://Asset/WorldSprites/BiomeAlive/Vegetation/Bush4.png" id="7_kmbo7"]
+[ext_resource type="Texture2D" uid="uid://cykov07a0or3k" path="res://Asset/WorldSprites/BiomeDead/TreesDead/TreeVegetation4_dead.png" id="7_lbm0s"]
+[ext_resource type="Texture2D" uid="uid://dmwgs0my5pm6b" path="res://Asset/WorldSprites/BiomeDead/TreesDead/TreeVegetation2_dead.png" id="8_5j0s0"]
+[ext_resource type="Texture2D" uid="uid://byk8o0fh0pvwr" path="res://Asset/WorldSprites/BiomeDead/PlatformsDead/Platform3_dead.png" id="8_urss4"]
+[ext_resource type="Texture2D" uid="uid://db6wiqclflr6i" path="res://Asset/WorldSprites/BiomeDead/VegetationDead/Grass1_dead.png" id="9_mdekt"]
+[ext_resource type="Texture2D" uid="uid://cuw26i8im834b" path="res://Asset/WorldSprites/BiomeDead/Rock & Stones Dead/Stones2_dead.png" id="10_6m2mr"]
+[ext_resource type="Texture2D" uid="uid://5ufehjbdfsy2" path="res://Asset/WorldSprites/BiomeDead/VegetationDead/Grass3_dead.png" id="18_1c2rm"]
+[ext_resource type="Texture2D" uid="uid://cyl5qwu0r7fdf" path="res://Asset/WorldSprites/BiomeAlive/Rocks & Stones/Stones6.png" id="19_ueldg"]
+[ext_resource type="Texture2D" uid="uid://kij4lfoic5lp" path="res://Asset/WorldSprites/BiomeAlive/Rocks & Stones/Stones7.png" id="20_wl2hd"]
+[ext_resource type="Texture2D" uid="uid://cr8ctfuire46a" path="res://Asset/WorldSprites/BiomeAlive/Rocks & Stones/Stones4.png" id="21_jboia"]
 
 [node name="PanelContainer" type="PanelContainer" unique_id=3001377]
 anchors_preset = 15
@@ -14,13 +38,30 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_rrxvj")
 
+[node name="MenuBackground" type="Node2D" parent="." unique_id=550980374]
+
+[node name="SkyBoxDead" type="Sprite2D" parent="MenuBackground" unique_id=1684231794]
+position = Vector2(357, 217)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("2_k4ove")
+
+[node name="Background2" type="Sprite2D" parent="MenuBackground" unique_id=516497236]
+position = Vector2(355, 118)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("3_eami7")
+
+[node name="Background" type="Sprite2D" parent="MenuBackground" unique_id=1405817632]
+position = Vector2(357, 216)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("3_eami7")
+
 [node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1314820297]
 layout_mode = 2
 
 [node name="Label" type="Label" parent="VBoxContainer" unique_id=2020431264]
 layout_mode = 2
 theme_override_font_sizes/font_size = 40
-text = "Label testing for title"
+text = "Threshhold"
 horizontal_alignment = 1
 uppercase = true
 
@@ -33,6 +74,149 @@ text = "Play Game"
 layout_mode = 2
 theme_override_font_sizes/font_size = 25
 text = "Quit Game"
+
+[node name="Decoration" type="Node" parent="." unique_id=1178053124]
+
+[node name="Grave3" type="Sprite2D" parent="Decoration" unique_id=1396103851]
+position = Vector2(12, 454)
+texture = ExtResource("4_mbc7s")
+
+[node name="Grave5Dead" type="Sprite2D" parent="Decoration" unique_id=918128588]
+position = Vector2(1126, 491)
+texture = ExtResource("5_kmbo7")
+
+[node name="Grave2Dead" type="Sprite2D" parent="Decoration" unique_id=1101865721]
+position = Vector2(564, 476)
+texture = ExtResource("6_urss4")
+
+[node name="Grave3Dead" type="Sprite2D" parent="Decoration" unique_id=348352506]
+position = Vector2(308, 432)
+texture = ExtResource("7_1c2rm")
+
+[node name="Flower2" type="Sprite2D" parent="Decoration" unique_id=378599742]
+position = Vector2(779, 527)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("4_dedtc")
+
+[node name="Flower1" type="Sprite2D" parent="Decoration" unique_id=2064721833]
+position = Vector2(565, 520)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("5_fs4h1")
+
+[node name="Flower5" type="Sprite2D" parent="Decoration" unique_id=716139553]
+position = Vector2(1114, 522)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("6_mbc7s")
+
+[node name="Bush4" type="Sprite2D" parent="Decoration" unique_id=1666881780]
+position = Vector2(810, 481)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("7_kmbo7")
+
+[node name="Platform3Dead" type="Sprite2D" parent="Decoration" unique_id=1555446607]
+position = Vector2(620, 868)
+texture = ExtResource("8_urss4")
+
+[node name="TreeFull1" type="Sprite2D" parent="Decoration" unique_id=327858354]
+position = Vector2(889, 346)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_vbdn0")
+
+[node name="Grass1" type="Sprite2D" parent="Decoration" unique_id=520793835]
+position = Vector2(910, 557)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("3_x2pvq")
+
+[node name="Node" type="Node2D" parent="Decoration" unique_id=903158982]
+position = Vector2(58, 229)
+scale = Vector2(0.5, 0.5)
+
+[node name="Tree2Dead" type="Sprite2D" parent="Decoration/Node" unique_id=300294452]
+position = Vector2(125, 170)
+texture = ExtResource("4_du3yi")
+
+[node name="TreeVegetation1Dead" type="Sprite2D" parent="Decoration/Node" unique_id=1504593578]
+position = Vector2(-68, -164)
+texture = ExtResource("5_55g6a")
+
+[node name="TreeVegetation3Dead" type="Sprite2D" parent="Decoration/Node" unique_id=106899604]
+position = Vector2(19, -92)
+texture = ExtResource("6_p3x8m")
+
+[node name="TreeVegetation4Dead" type="Sprite2D" parent="Decoration/Node" unique_id=69150194]
+position = Vector2(203, 151)
+texture = ExtResource("7_lbm0s")
+
+[node name="TreeVegetation1Dead2" type="Sprite2D" parent="Decoration/Node" unique_id=124181492]
+position = Vector2(-63, 93)
+texture = ExtResource("5_55g6a")
+
+[node name="TreeVegetation2Dead" type="Sprite2D" parent="Decoration/Node" unique_id=508343431]
+position = Vector2(256, -73)
+texture = ExtResource("8_5j0s0")
+
+[node name="Grass1Dead" type="Sprite2D" parent="Decoration" unique_id=2126259232]
+position = Vector2(226, 552)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("9_mdekt")
+flip_h = true
+
+[node name="Stones2Dead" type="Sprite2D" parent="Decoration" unique_id=746566243]
+position = Vector2(163, 575)
+texture = ExtResource("10_6m2mr")
+
+[node name="Grass3Dead" type="Sprite2D" parent="Decoration" unique_id=599361199]
+position = Vector2(546, 554)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("18_1c2rm")
+
+[node name="Stones6" type="Sprite2D" parent="Decoration" unique_id=1948911184]
+position = Vector2(172, 588)
+texture = ExtResource("19_ueldg")
+
+[node name="Stones7" type="Sprite2D" parent="Decoration" unique_id=762570431]
+position = Vector2(398, 674)
+texture = ExtResource("20_wl2hd")
+
+[node name="Stones8" type="Sprite2D" parent="Decoration" unique_id=952503485]
+position = Vector2(582, 611)
+texture = ExtResource("19_ueldg")
+
+[node name="Stones4" type="Sprite2D" parent="Decoration" unique_id=17962840]
+position = Vector2(748, 580)
+texture = ExtResource("21_jboia")
+
+[node name="Stones9" type="Sprite2D" parent="Decoration" unique_id=1015745532]
+position = Vector2(6, 602)
+texture = ExtResource("19_ueldg")
+
+[node name="Stones10" type="Sprite2D" parent="Decoration" unique_id=152884944]
+position = Vector2(472, 619)
+texture = ExtResource("20_wl2hd")
+
+[node name="Credits" type="Node" parent="." unique_id=891870910]
+
+[node name="SoundCredits" type="RichTextLabel" parent="Credits" unique_id=311608852]
+offset_left = 220.0
+offset_top = 366.0
+offset_right = 387.0
+offset_bottom = 540.0
+text = "free tv music 4MTN5 extk by djgriffin -- https://freesound.org/s/730277/ -- License: Attribution NonCommercial 4.0"
+fit_content = true
+
+[node name="Art_Animations" type="RichTextLabel" parent="Credits" unique_id=1568691082]
+offset_left = 507.0
+offset_top = 415.0
+offset_right = 616.0
+offset_bottom = 522.0
+text = "Art and Animations by Anothony D"
+
+[node name="EverythingElse" type="RichTextLabel" parent="Credits" unique_id=281596505]
+offset_left = 1056.0
+offset_top = 390.0
+offset_right = 1147.0
+offset_bottom = 535.0
+text = "Made by Aurelian Howard"
 
 [connection signal="pressed" from="VBoxContainer/PlayButton" to="." method="_on_play_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]

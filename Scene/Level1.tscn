@@ -26,6 +26,7 @@
 [ext_resource type="Texture2D" uid="uid://e2xcwa7ml224" path="res://Asset/WorldSprites/BiomeDead/VegetationDead/Bush1_dead.png" id="20_rtpiv"]
 [ext_resource type="Texture2D" uid="uid://tt15gcmvdl2y" path="res://Asset/WorldSprites/BiomeAlive/Vegetation/Flower6.png" id="21_6nrup"]
 [ext_resource type="Texture2D" uid="uid://c66p8yxjosl23" path="res://Asset/WorldSprites/BiomeAlive/Vegetation/Bush1.png" id="22_cx180"]
+[ext_resource type="Texture2D" uid="uid://dpfnyejojcke" path="res://Asset/WorldSprites/BiomeAlive/Trees/TreeFull1.png" id="22_i8m3p"]
 [ext_resource type="Texture2D" uid="uid://cmk8rc6d448wh" path="res://Asset/WorldSprites/BiomeAlive/Vegetation/Flower3.png" id="23_e1mdc"]
 [ext_resource type="Texture2D" uid="uid://tw6jta62xtfy" path="res://Asset/WorldSprites/BiomeAlive/Vegetation/Flower7.png" id="24_txo0k"]
 [ext_resource type="Texture2D" uid="uid://c0mp8k162un5q" path="res://Asset/WorldSprites/BiomeAlive/Vegetation/Flower9.png" id="25_jh771"]
@@ -54,6 +55,9 @@
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_50d7b"]
 size = Vector2(3987, 781)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i8m3p"]
+size = Vector2(523, 1664)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qblvq"]
 size = Vector2(274.9536, 3644)
@@ -196,93 +200,50 @@ position = Vector2(-19.399805, 241.00023)
 scale = Vector2(0.99999994, 0.99999994)
 texture = ExtResource("6_ofx4i")
 
-[node name="Decoration" type="Node2D" parent="World" unique_id=46339588]
+[node name="SkyBoxDead" type="Sprite2D" parent="World/Backgrounds" unique_id=2073755553]
+position = Vector2(42009.5, -3740.5)
+scale = Vector2(2.5983887, 2.676389)
+texture = ExtResource("5_fpa3h")
 
-[node name="Tree2Dead" type="Sprite2D" parent="World/Decoration" unique_id=1038301027]
-position = Vector2(44458, 204)
-texture = ExtResource("37_8m5uo")
-
-[node name="Platform1Dead" type="Sprite2D" parent="World/Decoration" unique_id=1552083057]
-position = Vector2(44486, 874)
-texture = ExtResource("38_lqlsm")
-
-[node name="Grass3Dead" type="Sprite2D" parent="World/Decoration" unique_id=1089809883]
-position = Vector2(44465, 645)
-texture = ExtResource("29_8m5uo")
-
-[node name="TreeVegetation2Dead" type="Sprite2D" parent="World/Decoration" unique_id=2052840855]
-position = Vector2(44595, -86)
-texture = ExtResource("39_65kbx")
-
-[node name="TreeVegetation1Dead" type="Sprite2D" parent="World/Decoration" unique_id=660326775]
-position = Vector2(44359, -222)
-texture = ExtResource("40_qpoeo")
-
-[node name="TreeVegetation3Dead" type="Sprite2D" parent="World/Decoration" unique_id=1076893633]
-position = Vector2(44259, 87)
-texture = ExtResource("41_k0rms")
-
-[node name="TreeVegetation4Dead" type="Sprite2D" parent="World/Decoration" unique_id=1769011927]
-position = Vector2(44555, 202)
-texture = ExtResource("42_qkgfv")
-
-[node name="Grave2" type="Node2D" parent="World/Decoration" unique_id=758961392]
-
-[node name="Grave2Dead" type="Sprite2D" parent="World/Decoration/Grave2" unique_id=34736955]
-position = Vector2(-8817, -3542)
-texture = ExtResource("13_lqlsm")
-
-[node name="RichTextLabel" type="RichTextLabel" parent="World/Decoration/Grave2/Grave2Dead" unique_id=631575530]
-offset_left = -59.0
-offset_top = 2.0
-offset_right = 53.0
-offset_bottom = 129.0
-text = "May all those who fell here rest in peace. "
-
-[node name="Grave5" type="Node2D" parent="World/Decoration" unique_id=2028605989]
-
-[node name="Grave2Dead" type="Sprite2D" parent="World/Decoration/Grave5" unique_id=1380167863]
-position = Vector2(1075, 1635)
-texture = ExtResource("13_lqlsm")
-
-[node name="RichTextLabel" type="RichTextLabel" parent="World/Decoration/Grave5/Grave2Dead" unique_id=98797399]
-offset_left = -70.0
-offset_top = -19.0
-offset_right = 57.0
-offset_bottom = 129.0
-text = "Jump and Cross between Worlds to get up."
-
-[node name="Grave3" type="Node2D" parent="World/Decoration" unique_id=921990372]
-position = Vector2(-2146, 1598)
-
-[node name="Grave3" type="Sprite2D" parent="World/Decoration/Grave3" unique_id=1034944146]
-texture = ExtResource("46_65kbx")
-
-[node name="RichTextLabel" type="RichTextLabel" parent="World/Decoration/Grave3/Grave3" unique_id=1634847842]
-offset_left = -56.0
-offset_top = -68.0
-offset_right = 51.0
-offset_bottom = 140.0
-text = "Press Q, or right mouse button to cross between worlds. If on controller use right bumper."
-
-[node name="Grave4" type="Node2D" parent="World/Decoration" unique_id=1562365537]
-
-[node name="Grave4Dead" type="Sprite2D" parent="World/Decoration/Grave4" unique_id=505974521]
-position = Vector2(2904, 1088)
-texture = ExtResource("47_qpoeo")
-
-[node name="RichTextLabel" type="RichTextLabel" parent="World/Decoration/Grave4/Grave4Dead" unique_id=545877535]
-offset_left = -91.0
-offset_top = -62.0
-offset_right = 124.0
-text = "Press Shift, or left button on a controller to dash."
-
-[node name="Grave1" parent="World/Decoration" unique_id=1596923117 instance=ExtResource("30_65kbx")]
-position = Vector2(-10965, -3474.9998)
-scale = Vector2(0.9999999, 0.9999999)
+[node name="Background" type="Sprite2D" parent="World/Backgrounds" unique_id=622287549]
+position = Vector2(41888.5, -2492.5002)
+scale = Vector2(2.6677258, 2.2550924)
+texture = ExtResource("1_10jwb")
 
 [node name="TheTreeOfSouls" type="StaticBody2D" parent="World" unique_id=1306475206]
 position = Vector2(40645, -1706)
+
+[node name="Background" type="Node2D" parent="World/TheTreeOfSouls" unique_id=266978759]
+
+[node name="BackgroundDead" type="Sprite2D" parent="World/TheTreeOfSouls/Background" unique_id=1785887804]
+position = Vector2(1442.5, -594)
+scale = Vector2(2.6237793, 2)
+texture = ExtResource("6_ofx4i")
+
+[node name="Background" type="Sprite2D" parent="World/TheTreeOfSouls/Background" unique_id=751651395]
+position = Vector2(2148, 508)
+scale = Vector2(3.0837402, 2)
+texture = ExtResource("1_10jwb")
+
+[node name="BackgroundDead2" type="Sprite2D" parent="World/TheTreeOfSouls/Background" unique_id=101128385]
+position = Vector2(1443, 997)
+scale = Vector2(2.6237793, 2)
+texture = ExtResource("6_ofx4i")
+
+[node name="Background2" type="Sprite2D" parent="World/TheTreeOfSouls/Background" unique_id=1576641391]
+position = Vector2(2218, 2127)
+scale = Vector2(3.0837402, 2)
+texture = ExtResource("1_10jwb")
+
+[node name="BackgroundDead3" type="Sprite2D" parent="World/TheTreeOfSouls/Background" unique_id=837936518]
+position = Vector2(1235, 2612)
+scale = Vector2(2.6237793, 2)
+texture = ExtResource("6_ofx4i")
+
+[node name="Background3" type="Sprite2D" parent="World/TheTreeOfSouls/Background" unique_id=1813022517]
+position = Vector2(2177, 3312)
+scale = Vector2(3.0837402, 2)
+texture = ExtResource("1_10jwb")
 
 [node name="TreeOfSouls" type="Sprite2D" parent="World/TheTreeOfSouls" unique_id=789791730]
 position = Vector2(-346, 254)
@@ -375,8 +336,103 @@ texture = ExtResource("33_k0rms")
 position = Vector2(-1259, 1171)
 texture = ExtResource("34_qkgfv")
 
+[node name="Area2D" type="Area2D" parent="World/TheTreeOfSouls" unique_id=1817403476]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World/TheTreeOfSouls/Area2D" unique_id=900221318]
+position = Vector2(-197.5, 236)
+shape = SubResource("RectangleShape2D_i8m3p")
+
+[node name="Decoration" type="Node2D" parent="World" unique_id=46339588]
+
+[node name="TreeFull1" type="Sprite2D" parent="World/Decoration" unique_id=1568724763]
+position = Vector2(43760, 264)
+texture = ExtResource("22_i8m3p")
+
+[node name="Tree2Dead" type="Sprite2D" parent="World/Decoration" unique_id=1038301027]
+position = Vector2(44458, 204)
+texture = ExtResource("37_8m5uo")
+
+[node name="Platform1Dead" type="Sprite2D" parent="World/Decoration" unique_id=1552083057]
+position = Vector2(44486, 874)
+texture = ExtResource("38_lqlsm")
+
+[node name="Grass3Dead" type="Sprite2D" parent="World/Decoration" unique_id=1089809883]
+position = Vector2(44465, 645)
+texture = ExtResource("29_8m5uo")
+
+[node name="TreeVegetation2Dead" type="Sprite2D" parent="World/Decoration" unique_id=2052840855]
+position = Vector2(44595, -86)
+texture = ExtResource("39_65kbx")
+
+[node name="TreeVegetation1Dead" type="Sprite2D" parent="World/Decoration" unique_id=660326775]
+position = Vector2(44359, -222)
+texture = ExtResource("40_qpoeo")
+
+[node name="TreeVegetation3Dead" type="Sprite2D" parent="World/Decoration" unique_id=1076893633]
+position = Vector2(44259, 87)
+texture = ExtResource("41_k0rms")
+
+[node name="TreeVegetation4Dead" type="Sprite2D" parent="World/Decoration" unique_id=1769011927]
+position = Vector2(44555, 202)
+texture = ExtResource("42_qkgfv")
+
+[node name="Grave2" type="Node2D" parent="World/Decoration" unique_id=758961392]
+
+[node name="Grave2Dead" type="Sprite2D" parent="World/Decoration/Grave2" unique_id=34736955]
+position = Vector2(-8817, -3542)
+texture = ExtResource("13_lqlsm")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="World/Decoration/Grave2/Grave2Dead" unique_id=631575530]
+offset_left = -59.0
+offset_top = 2.0
+offset_right = 53.0
+offset_bottom = 129.0
+text = "May all those who fell here rest in peace. "
+
+[node name="Grave5" type="Node2D" parent="World/Decoration" unique_id=2028605989]
+
+[node name="Grave2Dead" type="Sprite2D" parent="World/Decoration/Grave5" unique_id=1380167863]
+position = Vector2(1075, 1635)
+texture = ExtResource("13_lqlsm")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="World/Decoration/Grave5/Grave2Dead" unique_id=98797399]
+offset_left = -70.0
+offset_top = -19.0
+offset_right = 57.0
+offset_bottom = 129.0
+text = "Jump and Cross between Worlds to get up."
+
+[node name="Grave3" type="Node2D" parent="World/Decoration" unique_id=921990372]
+position = Vector2(-2146, 1598)
+
+[node name="Grave3" type="Sprite2D" parent="World/Decoration/Grave3" unique_id=1034944146]
+texture = ExtResource("46_65kbx")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="World/Decoration/Grave3/Grave3" unique_id=1634847842]
+offset_left = -56.0
+offset_top = -68.0
+offset_right = 51.0
+offset_bottom = 140.0
+text = "Press Q, or right mouse button to cross between worlds. If on controller use right bumper."
+
+[node name="Grave4" type="Node2D" parent="World/Decoration" unique_id=1562365537]
+
+[node name="Grave4Dead" type="Sprite2D" parent="World/Decoration/Grave4" unique_id=505974521]
+position = Vector2(2904, 1088)
+texture = ExtResource("47_qpoeo")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="World/Decoration/Grave4/Grave4Dead" unique_id=545877535]
+offset_left = -91.0
+offset_top = -62.0
+offset_right = 124.0
+text = "Press Shift, or left button on a controller to dash."
+
+[node name="Grave1" parent="World/Decoration" unique_id=1596923117 instance=ExtResource("30_65kbx")]
+position = Vector2(-10965, -3474.9998)
+scale = Vector2(0.9999999, 0.9999999)
+
 [node name="Player" parent="World" unique_id=2137926258 instance=ExtResource("3_ruose")]
-position = Vector2(737, 1482.9999)
+position = Vector2(-11408.999, -3660.9995)
 scale = Vector2(0.1, 0.1)
 move_speed = 700.0
 jump_velocity = -1000.0
@@ -926,6 +982,18 @@ scale = Vector2(6, 0.594)
 position = Vector2(20231, -252)
 scale = Vector2(6, 0.594)
 
+[node name="PillarBoth1A2" parent="World/Life&Death" unique_id=992954197 instance=ExtResource("19_txo0k")]
+position = Vector2(36602, 1479.0001)
+scale = Vector2(6, 6)
+
+[node name="PillarBoth1A4" parent="World/Life&Death" unique_id=341905179 instance=ExtResource("19_txo0k")]
+position = Vector2(36598, 2106)
+scale = Vector2(6, 6)
+
+[node name="PillarBoth1A6" parent="World/Life&Death" unique_id=1411208227 instance=ExtResource("19_txo0k")]
+position = Vector2(36591, 2582)
+scale = Vector2(6, 6)
+
 [node name="InvisibleWall" type="StaticBody2D" parent="World" unique_id=1391446539]
 position = Vector2(-12432, -4416.0015)
 scale = Vector2(1.0000001, 1.0000001)
@@ -962,5 +1030,6 @@ shape = SubResource("RectangleShape2D_4qlvd")
 
 [node name="SlowPiano" type="AudioStreamPlayer" parent="Sound" unique_id=1743994617]
 stream = ExtResource("13_cu1y2")
+autoplay = true
 
 [connection signal="body_entered" from="World/OutOfBounds" to="World/OutOfBounds" method="_on_body_entered"]
