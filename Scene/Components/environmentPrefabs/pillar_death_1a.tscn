@@ -1,11 +1,13 @@
 [gd_scene format=3 uid="uid://lxuh3eykob83"]
 
+[ext_resource type="Script" uid="uid://exj4pmtw34at" path="res://Scripts/WorldManagement/WorldSwap.gd" id="1_6lani"]
 [ext_resource type="Texture2D" uid="uid://dnkky2c76htv" path="res://Asset/WorldSprites/BiomeDead/PlatformsDead/PlatformPillar1_dead.png" id="1_j7afd"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_iu3r5"]
 size = Vector2(48, 112)
 
 [node name="PillarDeath1A" type="StaticBody2D" unique_id=1541464306]
+script = ExtResource("1_6lani")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=500112346]
 position = Vector2(-1, 44)

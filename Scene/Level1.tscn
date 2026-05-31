@@ -8,10 +8,48 @@
 [ext_resource type="Script" uid="uid://dpg4swpt836pr" path="res://Scripts/WorldManagement/Respawn.gd" id="4_8bq5r"]
 [ext_resource type="Texture2D" uid="uid://nydcsqef3fio" path="res://Asset/WorldSprites/BiomeDead/SkyBox_dead.png" id="5_fpa3h"]
 [ext_resource type="Texture2D" uid="uid://3b22tjme24ei" path="res://Asset/WorldSprites/BiomeDead/Background_dead.png" id="6_ofx4i"]
+[ext_resource type="Texture2D" uid="uid://ci4012hko5jgt" path="res://Asset/WorldSprites/BiomeAlive/Graves/Grave5.png" id="7_qblvq"]
+[ext_resource type="PackedScene" uid="uid://ba234ehsm6fgf" path="res://Scene/Components/environmentPrefabs/fallen_trunk_platform_life.tscn" id="8_7ynka"]
 [ext_resource type="PackedScene" uid="uid://b51celkhltwem" path="res://Scene/Components/environmentPrefabs/bridge_platform_support_1a.tscn" id="8_lfbnc"]
+[ext_resource type="PackedScene" uid="uid://dnm2lhitsev1l" path="res://Scene/Components/environmentPrefabs/life_platform_1a.tscn" id="9_hjmnv"]
 [ext_resource type="PackedScene" uid="uid://bb81fthcf74cw" path="res://Scene/Components/environmentPrefabs/death_brick_bridge.tscn" id="10_d8c13"]
+[ext_resource type="PackedScene" uid="uid://cu550kvxg6kck" path="res://Scene/Components/environmentPrefabs/dead_log_bridge_1a.tscn" id="10_hjmnv"]
+[ext_resource type="PackedScene" uid="uid://b4fy2sli78pp0" path="res://Scene/Components/environmentPrefabs/life_rubble.tscn" id="11_cx180"]
 [ext_resource type="PackedScene" uid="uid://dom8xa1basdhj" path="res://Scene/Components/environmentPrefabs/pillar_life_1a.tscn" id="12_xb73i"]
+[ext_resource type="AudioStream" uid="uid://chgnj3kjo88p6" path="res://Asset/Sound/730277__djgriffin__free-tv-music-4mtn5-extk.wav" id="13_cu1y2"]
 [ext_resource type="PackedScene" uid="uid://lxuh3eykob83" path="res://Scene/Components/environmentPrefabs/pillar_death_1a.tscn" id="13_xj5bp"]
+[ext_resource type="PackedScene" uid="uid://b1w2wda7k5h3m" path="res://Scene/Components/environmentPrefabs/death_platform_1a.tscn" id="14_xb73i"]
+[ext_resource type="PackedScene" uid="uid://bh2bksy4jhw2p" path="res://Scene/Components/environmentPrefabs/death_rubble.tscn" id="16_e1mdc"]
+[ext_resource type="Texture2D" uid="uid://dbgrusmiwaidx" path="res://Asset/WorldSprites/TreeOfSouls.png" id="19_4nww0"]
+[ext_resource type="PackedScene" uid="uid://bbvvd4nuom0yn" path="res://Scene/Components/environmentPrefabs/pillar_both_1a.tscn" id="19_txo0k"]
+[ext_resource type="Texture2D" uid="uid://e2xcwa7ml224" path="res://Asset/WorldSprites/BiomeDead/VegetationDead/Bush1_dead.png" id="20_rtpiv"]
+[ext_resource type="Texture2D" uid="uid://tt15gcmvdl2y" path="res://Asset/WorldSprites/BiomeAlive/Vegetation/Flower6.png" id="21_6nrup"]
+[ext_resource type="Texture2D" uid="uid://c66p8yxjosl23" path="res://Asset/WorldSprites/BiomeAlive/Vegetation/Bush1.png" id="22_cx180"]
+[ext_resource type="Texture2D" uid="uid://cmk8rc6d448wh" path="res://Asset/WorldSprites/BiomeAlive/Vegetation/Flower3.png" id="23_e1mdc"]
+[ext_resource type="Texture2D" uid="uid://tw6jta62xtfy" path="res://Asset/WorldSprites/BiomeAlive/Vegetation/Flower7.png" id="24_txo0k"]
+[ext_resource type="Texture2D" uid="uid://c0mp8k162un5q" path="res://Asset/WorldSprites/BiomeAlive/Vegetation/Flower9.png" id="25_jh771"]
+[ext_resource type="Texture2D" uid="uid://duhbdrgb1uora" path="res://Asset/WorldSprites/BiomeAlive/Vegetation/Grass3.png" id="26_pij01"]
+[ext_resource type="Texture2D" uid="uid://byk8o0fh0pvwr" path="res://Asset/WorldSprites/BiomeDead/PlatformsDead/Platform3_dead.png" id="27_rahig"]
+[ext_resource type="Texture2D" uid="uid://db6wiqclflr6i" path="res://Asset/WorldSprites/BiomeDead/VegetationDead/Grass1_dead.png" id="28_8u6mg"]
+[ext_resource type="Texture2D" uid="uid://5ufehjbdfsy2" path="res://Asset/WorldSprites/BiomeDead/VegetationDead/Grass3_dead.png" id="29_8m5uo"]
+[ext_resource type="Texture2D" uid="uid://c53d8ig4j2pgy" path="res://Asset/WorldSprites/BiomeAlive/Vegetation/Tuff1.png" id="30_lqlsm"]
+[ext_resource type="Texture2D" uid="uid://b2rqca2rar210" path="res://Asset/WorldSprites/BiomeDead/VegetationDead/Tuff4_dead.png" id="31_65kbx"]
+[ext_resource type="Texture2D" uid="uid://ne115obbcna2" path="res://Asset/WorldSprites/BiomeDead/VegetationDead/Tuff3_dead.png" id="32_qpoeo"]
+[ext_resource type="Texture2D" uid="uid://db7o3eyttbt03" path="res://Asset/WorldSprites/BiomeDead/VegetationDead/Tuff2_dead.png" id="33_k0rms"]
+[ext_resource type="Texture2D" uid="uid://cn34wfimybwxi" path="res://Asset/WorldSprites/BiomeDead/VegetationDead/Tuff1_dead.png" id="34_qkgfv"]
+[ext_resource type="Texture2D" uid="uid://qdl7jnohhaxf" path="res://Asset/WorldSprites/BiomeDead/TreesDead/Tree2_dead.png" id="37_8m5uo"]
+[ext_resource type="PackedScene" uid="uid://gycys27ajacj" path="res://Scene/Components/environmentPrefabs/life_brick_bridge.tscn" id="38_e1mdc"]
+[ext_resource type="Texture2D" uid="uid://b1rs5l8v4fbgk" path="res://Asset/WorldSprites/BiomeDead/PlatformsDead/Platform1_dead.png" id="38_lqlsm"]
+[ext_resource type="Texture2D" uid="uid://dmwgs0my5pm6b" path="res://Asset/WorldSprites/BiomeDead/TreesDead/TreeVegetation2_dead.png" id="39_65kbx"]
+[ext_resource type="Texture2D" uid="uid://cd4k1a6nv5oen" path="res://Asset/WorldSprites/BiomeDead/TreesDead/TreeVegetation1_dead.png" id="40_qpoeo"]
+[ext_resource type="Texture2D" uid="uid://ddigqg4tjpi25" path="res://Asset/WorldSprites/BiomeDead/TreesDead/TreeVegetation3_dead.png" id="41_k0rms"]
+[ext_resource type="Texture2D" uid="uid://cykov07a0or3k" path="res://Asset/WorldSprites/BiomeDead/TreesDead/TreeVegetation4_dead.png" id="42_qkgfv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_50d7b"]
+size = Vector2(3987, 781)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qblvq"]
+size = Vector2(274.9536, 3644)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4qlvd"]
 size = Vector2(23.113897, 20)
@@ -151,8 +189,132 @@ position = Vector2(-19.399805, 241.00023)
 scale = Vector2(0.99999994, 0.99999994)
 texture = ExtResource("6_ofx4i")
 
+[node name="Decoration" type="Node2D" parent="World" unique_id=46339588]
+
+[node name="Tree2Dead" type="Sprite2D" parent="World/Decoration" unique_id=1038301027]
+position = Vector2(44458, 204)
+texture = ExtResource("37_8m5uo")
+
+[node name="Platform1Dead" type="Sprite2D" parent="World/Decoration" unique_id=1552083057]
+position = Vector2(44486, 874)
+texture = ExtResource("38_lqlsm")
+
+[node name="Grass3Dead" type="Sprite2D" parent="World/Decoration" unique_id=1089809883]
+position = Vector2(44465, 645)
+texture = ExtResource("29_8m5uo")
+
+[node name="TreeVegetation2Dead" type="Sprite2D" parent="World/Decoration" unique_id=2052840855]
+position = Vector2(44595, -86)
+texture = ExtResource("39_65kbx")
+
+[node name="TreeVegetation1Dead" type="Sprite2D" parent="World/Decoration" unique_id=660326775]
+position = Vector2(44359, -222)
+texture = ExtResource("40_qpoeo")
+
+[node name="TreeVegetation3Dead" type="Sprite2D" parent="World/Decoration" unique_id=1076893633]
+position = Vector2(44259, 87)
+texture = ExtResource("41_k0rms")
+
+[node name="TreeVegetation4Dead" type="Sprite2D" parent="World/Decoration" unique_id=1769011927]
+position = Vector2(44555, 202)
+texture = ExtResource("42_qkgfv")
+
+[node name="TheTreeOfSouls" type="StaticBody2D" parent="World" unique_id=1306475206]
+position = Vector2(40645, -1706)
+
+[node name="TreeOfSouls" type="Sprite2D" parent="World/TheTreeOfSouls" unique_id=789791730]
+position = Vector2(-346, 254)
+scale = Vector2(3, 3)
+texture = ExtResource("19_4nww0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World/TheTreeOfSouls" unique_id=675251545]
+position = Vector2(-172.5, 1699.5)
+shape = SubResource("RectangleShape2D_50d7b")
+
+[node name="Image" type="Node2D" parent="World/TheTreeOfSouls" unique_id=1282676203]
+
+[node name="Bush1Dead" type="Sprite2D" parent="World/TheTreeOfSouls/Image" unique_id=1204060279]
+position = Vector2(-1505, 1208)
+texture = ExtResource("20_rtpiv")
+
+[node name="Flower6" type="Sprite2D" parent="World/TheTreeOfSouls/Image" unique_id=1454814406]
+position = Vector2(-1020, 1271)
+texture = ExtResource("21_6nrup")
+
+[node name="Bush1" type="Sprite2D" parent="World/TheTreeOfSouls/Image" unique_id=2131564353]
+position = Vector2(1384, 1208)
+texture = ExtResource("22_cx180")
+
+[node name="Flower3" type="Sprite2D" parent="World/TheTreeOfSouls/Image" unique_id=723853931]
+position = Vector2(-160, 1296)
+texture = ExtResource("23_e1mdc")
+
+[node name="Flower7" type="Sprite2D" parent="World/TheTreeOfSouls/Image" unique_id=403867897]
+position = Vector2(627, 1282)
+texture = ExtResource("24_txo0k")
+
+[node name="Flower9" type="Sprite2D" parent="World/TheTreeOfSouls/Image" unique_id=471122498]
+position = Vector2(1108, 1322)
+texture = ExtResource("25_jh771")
+
+[node name="Grass3" type="Sprite2D" parent="World/TheTreeOfSouls/Image" unique_id=823734345]
+position = Vector2(-1085, 1355)
+texture = ExtResource("26_pij01")
+
+[node name="Grass4" type="Sprite2D" parent="World/TheTreeOfSouls/Image" unique_id=1721939173]
+position = Vector2(869, 1361)
+texture = ExtResource("26_pij01")
+
+[node name="Platform3Dead" type="Sprite2D" parent="World/TheTreeOfSouls/Image" unique_id=265041378]
+position = Vector2(134, 1749)
+texture = ExtResource("27_rahig")
+
+[node name="Platform3Dead2" type="Sprite2D" parent="World/TheTreeOfSouls/Image" unique_id=1343997998]
+position = Vector2(-364, 1759)
+texture = ExtResource("27_rahig")
+
+[node name="Platform3Dead3" type="Sprite2D" parent="World/TheTreeOfSouls/Image" unique_id=1164608084]
+position = Vector2(794, 1764)
+texture = ExtResource("27_rahig")
+
+[node name="Platform3Dead4" type="Sprite2D" parent="World/TheTreeOfSouls/Image" unique_id=1789785897]
+position = Vector2(-1192, 1775)
+texture = ExtResource("27_rahig")
+
+[node name="Grass1Dead" type="Sprite2D" parent="World/TheTreeOfSouls/Image" unique_id=412284520]
+position = Vector2(869, 1447)
+texture = ExtResource("28_8u6mg")
+
+[node name="Grass1Dead2" type="Sprite2D" parent="World/TheTreeOfSouls/Image" unique_id=1530104869]
+position = Vector2(-805, 1409)
+texture = ExtResource("28_8u6mg")
+
+[node name="Grass3Dead" type="Sprite2D" parent="World/TheTreeOfSouls/Image" unique_id=815337138]
+position = Vector2(-1628, 1436)
+texture = ExtResource("29_8m5uo")
+
+[node name="Tuff1" type="Sprite2D" parent="World/TheTreeOfSouls/Image" unique_id=335926938]
+position = Vector2(345, 1196)
+texture = ExtResource("30_lqlsm")
+
+[node name="Tuff4Dead" type="Sprite2D" parent="World/TheTreeOfSouls/Image" unique_id=1846227808]
+position = Vector2(192, 1171)
+texture = ExtResource("31_65kbx")
+
+[node name="Tuff3Dead" type="Sprite2D" parent="World/TheTreeOfSouls/Image" unique_id=1053822029]
+position = Vector2(-472, 1152)
+texture = ExtResource("32_qpoeo")
+
+[node name="Tuff2Dead" type="Sprite2D" parent="World/TheTreeOfSouls/Image" unique_id=1199183562]
+position = Vector2(969, 1186)
+texture = ExtResource("33_k0rms")
+
+[node name="Tuff1Dead" type="Sprite2D" parent="World/TheTreeOfSouls/Image" unique_id=254796754]
+position = Vector2(-1259, 1171)
+texture = ExtResource("34_qkgfv")
+
 [node name="Player" parent="World" unique_id=2137926258 instance=ExtResource("3_ruose")]
-position = Vector2(-3459.9998, 1591.9999)
+position = Vector2(30103, 797)
 scale = Vector2(0.1, 0.1)
 move_speed = 700.0
 jump_velocity = -1000.0
@@ -163,12 +325,105 @@ wall_jump_velocity = Vector2(700, -700)
 [node name="Life-World" type="Node2D" parent="World" unique_id=1471109549]
 scale = Vector2(5, 5)
 
+[node name="GraveLife" type="Node2D" parent="World/Life-World" unique_id=1245135012]
+position = Vector2(-1740.2, -706.6)
+scale = Vector2(0.19999997, 0.19999997)
+script = ExtResource("1_fpa3h")
+
+[node name="Grave5" type="Sprite2D" parent="World/Life-World/GraveLife" unique_id=1923106824]
+texture = ExtResource("7_qblvq")
+
 [node name="PillarLife1A" parent="World/Life-World" unique_id=297131962 instance=ExtResource("12_xb73i")]
 position = Vector2(190.59999, 183.19998)
 scale = Vector2(0.99999994, 0.99999994)
 
+[node name="FallenTrunkPlatformLife" parent="World/Life-World" unique_id=1616582209 instance=ExtResource("8_7ynka")]
+position = Vector2(-2047.5999, -674.19995)
+
+[node name="LifePlatform1A" parent="World/Life-World" unique_id=68748264 instance=ExtResource("9_hjmnv")]
+position = Vector2(-2272.5999, -600.6)
+scale = Vector2(0.19999999, 0.19999999)
+
+[node name="LifePlatform1A2" parent="World/Life-World" unique_id=902120999 instance=ExtResource("9_hjmnv")]
+position = Vector2(-1797.8, -613.39996)
+scale = Vector2(0.19999999, 0.19999999)
+
+[node name="PillarLife1A2" parent="World/Life-World" unique_id=1086291068 instance=ExtResource("12_xb73i")]
+position = Vector2(-1457.9999, -750.6)
+scale = Vector2(1.9999999, 1.9999999)
+
+[node name="PillarLife1A7" parent="World/Life-World" unique_id=1688721678 instance=ExtResource("12_xb73i")]
+position = Vector2(-1458, -971.19995)
+scale = Vector2(1.9999999, 1.9999999)
+
+[node name="PillarLife1A4" parent="World/Life-World" unique_id=90938156 instance=ExtResource("12_xb73i")]
+position = Vector2(-1456.2, -303.4)
+scale = Vector2(1.9999999, 1.9999999)
+
+[node name="PillarLife1A5" parent="World/Life-World" unique_id=1755212055 instance=ExtResource("12_xb73i")]
+position = Vector2(-1645.2, -660.6)
+scale = Vector2(1.9999999, 1.9999999)
+
+[node name="PillarLife1A6" parent="World/Life-World" unique_id=1293609854 instance=ExtResource("12_xb73i")]
+position = Vector2(-1645.2001, -442.20007)
+scale = Vector2(1.9999999, 1.9999999)
+
+[node name="PillarLife1A3" parent="World/Life-World" unique_id=378920742 instance=ExtResource("12_xb73i")]
+position = Vector2(-1456.2, -528.80005)
+scale = Vector2(1.9999999, 1.9999999)
+
+[node name="LifePlatform1A3" parent="World/Life-World" unique_id=1039564372 instance=ExtResource("9_hjmnv")]
+position = Vector2(-1580.9999, 181.79999)
+scale = Vector2(0.19999999, 0.19999999)
+
+[node name="LifePlatform1A4" parent="World/Life-World" unique_id=1011246220 instance=ExtResource("9_hjmnv")]
+position = Vector2(-1113.2, 339.59998)
+scale = Vector2(0.19999999, 0.19999999)
+
+[node name="PillarLife1A8" parent="World/Life-World" unique_id=1685597527 instance=ExtResource("12_xb73i")]
+position = Vector2(7896.7993, 136.6)
+scale = Vector2(1.1999999, 1.1999999)
+
+[node name="PillarLife1A9" parent="World/Life-World" unique_id=870620200 instance=ExtResource("12_xb73i")]
+position = Vector2(8417.399, 113.2)
+scale = Vector2(1.1999999, 1.1999999)
+
+[node name="LifeRubble" parent="World/Life-World" unique_id=1402296676 instance=ExtResource("11_cx180")]
+scale = Vector2(0.19999999, 0.19999999)
+
+[node name="PillarLife1A10" parent="World/Life-World" unique_id=246532427 instance=ExtResource("12_xb73i")]
+position = Vector2(8636.199, -78.6)
+scale = Vector2(1.1999999, 1.1999999)
+
+[node name="LifeBrickBridge" parent="World/Life-World" unique_id=370768013 instance=ExtResource("38_e1mdc")]
+position = Vector2(7630.5996, 242.79999)
+scale = Vector2(0.19999999, 0.19999999)
+
+[node name="LifeBrickBridge2" parent="World/Life-World" unique_id=2137888464 instance=ExtResource("38_e1mdc")]
+position = Vector2(7411.9995, 242.79999)
+scale = Vector2(0.19999999, 0.19999999)
+
+[node name="PillarLife1A11" parent="World/Life-World" unique_id=1245602415 instance=ExtResource("12_xb73i")]
+position = Vector2(7321.9995, 113.600006)
+scale = Vector2(1.1999998, 1.1999998)
+
+[node name="PillarLife1A12" parent="World/Life-World" unique_id=1395723303 instance=ExtResource("12_xb73i")]
+position = Vector2(7540.7993, 115.399994)
+scale = Vector2(1.1999999, 1.1999999)
+
+[node name="PillarLife1A13" parent="World/Life-World" unique_id=1784125153 instance=ExtResource("12_xb73i")]
+position = Vector2(7755.1997, 113.59999)
+scale = Vector2(1.1999999, 1.1999999)
+
+[node name="LifeBrickBridge3" parent="World/Life-World" unique_id=1788739476 instance=ExtResource("38_e1mdc")]
+position = Vector2(7192.5996, 242.99998)
+scale = Vector2(0.19999999, 0.19999999)
+
 [node name="Death-world" type="Node2D" parent="World" unique_id=1811960044]
 scale = Vector2(5, 5)
+
+[node name="DeadLogBridge1A" parent="World/Death-world" unique_id=2141127687 instance=ExtResource("10_hjmnv")]
+position = Vector2(-2051.5999, -302.59998)
 
 [node name="DeathBrickBridge4" parent="World/Death-world" unique_id=1754597209 instance=ExtResource("10_d8c13")]
 visible = false
@@ -195,6 +450,90 @@ visible = false
 position = Vector2(294, 246.79999)
 scale = Vector2(0.99999994, 0.99999994)
 
+[node name="DeathPlatform1a" parent="World/Death-world" unique_id=1262138642 instance=ExtResource("14_xb73i")]
+visible = false
+position = Vector2(566.8, 310.4)
+scale = Vector2(0.19999999, 0.19999999)
+
+[node name="DeathPlatform1a2" parent="World/Death-world" unique_id=110018279 instance=ExtResource("14_xb73i")]
+visible = false
+position = Vector2(-2276.5999, -235.19998)
+scale = Vector2(0.19999999, 0.19999999)
+
+[node name="DeathBrickBridge7" parent="World/Death-world" unique_id=320648383 instance=ExtResource("10_d8c13")]
+visible = false
+position = Vector2(-1354, -180.40001)
+scale = Vector2(0.5, 0.5)
+
+[node name="DeathBrickBridge5" parent="World/Death-world" unique_id=1097543246 instance=ExtResource("10_d8c13")]
+visible = false
+position = Vector2(-1833, -188.4)
+scale = Vector2(0.5, 0.5)
+
+[node name="DeathBrickBridge6" parent="World/Death-world" unique_id=111082214 instance=ExtResource("10_d8c13")]
+visible = false
+position = Vector2(-1738.6, -188.40001)
+scale = Vector2(0.5, 0.5)
+
+[node name="DeathBrickBridge8" parent="World/Death-world" unique_id=1926339808 instance=ExtResource("10_d8c13")]
+visible = false
+position = Vector2(-1028.4, -187)
+scale = Vector2(0.5, 0.5)
+
+[node name="DeathBrickBridge9" parent="World/Death-world" unique_id=1354370179 instance=ExtResource("10_d8c13")]
+visible = false
+position = Vector2(-927, -183.6)
+scale = Vector2(0.5, 0.5)
+
+[node name="PillarDeath1A2" parent="World/Death-world" unique_id=1376743906 instance=ExtResource("13_xj5bp")]
+visible = false
+position = Vector2(8173.3994, 130.2)
+scale = Vector2(1.1999999, 1.1999999)
+
+[node name="DeathRubble2" parent="World/Death-world" unique_id=1740871820 instance=ExtResource("16_e1mdc")]
+visible = false
+position = Vector2(8418.6, 218.99998)
+scale = Vector2(0.19999997, 0.19999997)
+
+[node name="DeathRubble" parent="World/Death-world" unique_id=1630029021 instance=ExtResource("16_e1mdc")]
+visible = false
+position = Vector2(7894.5996, 218.99998)
+scale = Vector2(0.19999999, 0.19999999)
+
+[node name="DeadLogBridge1A2" parent="World/Death-world" unique_id=1353930452 instance=ExtResource("10_hjmnv")]
+position = Vector2(8463.999, -73.6)
+rotation = -0.2495821
+
+[node name="PillarDeath1A3" parent="World/Death-world" unique_id=813040581 instance=ExtResource("13_xj5bp")]
+visible = false
+position = Vector2(8525.8, 21.999998)
+scale = Vector2(1.1999999, 1.1999999)
+
+[node name="DeathBrickBridge10" parent="World/Death-world" unique_id=167693234 instance=ExtResource("10_d8c13")]
+visible = false
+position = Vector2(8559.8, -45.39999)
+scale = Vector2(0.19999996, 0.19999996)
+
+[node name="DeathBrickBridge11" parent="World/Death-world" unique_id=1487843019 instance=ExtResource("10_d8c13")]
+visible = false
+position = Vector2(7760.3994, 280.59998)
+scale = Vector2(0.19999999, 0.19999999)
+
+[node name="DeathBrickBridge12" parent="World/Death-world" unique_id=1705558634 instance=ExtResource("10_d8c13")]
+visible = false
+position = Vector2(7543.1997, 280.99997)
+scale = Vector2(0.19999999, 0.19999999)
+
+[node name="DeathBrickBridge13" parent="World/Death-world" unique_id=1394371238 instance=ExtResource("10_d8c13")]
+visible = false
+position = Vector2(7323.3994, 280.99997)
+scale = Vector2(0.19999999, 0.19999999)
+
+[node name="DeathPlatform1a3" parent="World/Death-world" unique_id=644465438 instance=ExtResource("14_xb73i")]
+visible = false
+position = Vector2(6749.1997, 304.99997)
+scale = Vector2(0.19999999, 0.19999999)
+
 [node name="Life&Death" type="Node2D" parent="World" unique_id=702740745]
 
 [node name="PlatformType1A" parent="World/Life&Death" unique_id=302987560 instance=ExtResource("2_gqi4c")]
@@ -211,6 +550,82 @@ position = Vector2(865, 2000)
 position = Vector2(947.99994, 319)
 scale = Vector2(0.7, 0.7)
 
+[node name="PillarBoth1A" parent="World/Life&Death" unique_id=2001430673 instance=ExtResource("19_txo0k")]
+position = Vector2(39476, 48)
+scale = Vector2(6, 6)
+
+[node name="PillarBoth1A3" parent="World/Life&Death" unique_id=1632995794 instance=ExtResource("19_txo0k")]
+position = Vector2(40868, 21)
+scale = Vector2(6, 6)
+
+[node name="PillarBoth1A5" parent="World/Life&Death" unique_id=1480905992 instance=ExtResource("19_txo0k")]
+position = Vector2(42088, -68)
+scale = Vector2(6, 6)
+
+[node name="BridgePlatformSupport1A4" parent="World/Life&Death" unique_id=1699789559 instance=ExtResource("8_lfbnc")]
+position = Vector2(42093, 1401)
+
+[node name="BridgePlatformSupport1A5" parent="World/Life&Death" unique_id=904730102 instance=ExtResource("8_lfbnc")]
+position = Vector2(41194, 1399)
+
+[node name="BridgePlatformSupport1A6" parent="World/Life&Death" unique_id=76335388 instance=ExtResource("8_lfbnc")]
+position = Vector2(40325, 1403)
+
+[node name="BridgePlatformSupport1A7" parent="World/Life&Death" unique_id=16608426 instance=ExtResource("8_lfbnc")]
+position = Vector2(39464, 1403)
+
+[node name="BridgePlatformSupport1A8" parent="World/Life&Death" unique_id=1784702983 instance=ExtResource("8_lfbnc")]
+position = Vector2(42970, 912)
+
+[node name="BridgePlatformSupport1A9" parent="World/Life&Death" unique_id=2133020889 instance=ExtResource("8_lfbnc")]
+position = Vector2(43866, 913)
+
+[node name="BridgePlatformSupport1A10" parent="World/Life&Death" unique_id=1341775900 instance=ExtResource("8_lfbnc")]
+position = Vector2(44756, 912)
+
+[node name="BridgePlatformSupport1A11" parent="World/Life&Death" unique_id=379439540 instance=ExtResource("8_lfbnc")]
+position = Vector2(36616, -228)
+
+[node name="BridgePlatformSupport1A12" parent="World/Life&Death" unique_id=1282743962 instance=ExtResource("8_lfbnc")]
+position = Vector2(38319, 159)
+rotation = 1.3456489
+
+[node name="BridgePlatformSupport1A14" parent="World/Life&Death" unique_id=662568362 instance=ExtResource("8_lfbnc")]
+position = Vector2(36620, -2639)
+rotation = 3.1415925
+
+[node name="BridgePlatformSupport1A15" parent="World/Life&Death" unique_id=712304171 instance=ExtResource("8_lfbnc")]
+position = Vector2(36611, -2229)
+
+[node name="BridgePlatformSupport1A16" parent="World/Life&Death" unique_id=603006589 instance=ExtResource("8_lfbnc")]
+position = Vector2(36620, -4208)
+
+[node name="BridgePlatformSupport1A13" parent="World/Life&Death" unique_id=777717948 instance=ExtResource("8_lfbnc")]
+position = Vector2(36612, -647)
+rotation = 3.1415925
+
+[node name="InvisibleWall" type="StaticBody2D" parent="World" unique_id=1391446539]
+position = Vector2(-12432, -4416.0015)
+scale = Vector2(1.0000001, 1.0000001)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World/InvisibleWall" unique_id=1662593118]
+shape = SubResource("RectangleShape2D_qblvq")
+
+[node name="InvisibleWall2" type="StaticBody2D" parent="World" unique_id=402770951]
+position = Vector2(45359, -889)
+scale = Vector2(1.0000001, 1.0000001)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World/InvisibleWall2" unique_id=1380060429]
+shape = SubResource("RectangleShape2D_qblvq")
+
+[node name="InvisibleRoof" type="StaticBody2D" parent="World" unique_id=1532106876]
+position = Vector2(-8875, -5120)
+rotation = 1.5707964
+scale = Vector2(1, 2.04)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World/InvisibleRoof" unique_id=1714687574]
+shape = SubResource("RectangleShape2D_qblvq")
+
 [node name="OutOfBounds" type="Area2D" parent="World" unique_id=1953843858]
 position = Vector2(50.999996, 3759)
 scale = Vector2(670000.4, 50.92)
@@ -221,6 +636,12 @@ position = Vector2(1.5569491, 0)
 scale = Vector2(1.0000001, 1)
 shape = SubResource("RectangleShape2D_4qlvd")
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1743994617]
+[node name="LifePlatform1A" parent="World" unique_id=1342137742 instance=ExtResource("9_hjmnv")]
+position = Vector2(30436, 1521)
+
+[node name="Sound" type="Node" parent="." unique_id=503543687]
+
+[node name="SlowPiano" type="AudioStreamPlayer" parent="Sound" unique_id=1743994617]
+stream = ExtResource("13_cu1y2")
 
 [connection signal="body_entered" from="World/OutOfBounds" to="World/OutOfBounds" method="_on_body_entered"]

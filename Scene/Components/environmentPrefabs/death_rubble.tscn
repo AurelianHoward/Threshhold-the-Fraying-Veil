@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://bh2bksy4jhw2p"]
+
+[ext_resource type="Script" uid="uid://bv2ij7ix3v2fb" path="res://Scripts/WorldManagement/WorldSwap2.gd" id="1_qmbif"]
+[ext_resource type="Texture2D" uid="uid://bcaygpxgs2a4d" path="res://Asset/WorldSprites/BiomeDead/PlatformsDead/PlatformDebris_dead.png" id="2_nlhlk"]
+
+[node name="DeathRubble" type="Node2D" unique_id=1740871820]
+script = ExtResource("1_qmbif")
+
+[node name="PlatformDebrisDead" type="Sprite2D" parent="." unique_id=916690059]
+position = Vector2(9, 9)
+texture = ExtResource("2_nlhlk")

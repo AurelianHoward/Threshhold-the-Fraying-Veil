@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://b4fy2sli78pp0"]
+
+[ext_resource type="Script" uid="uid://bv2ij7ix3v2fb" path="res://Scripts/WorldManagement/WorldSwap2.gd" id="1_01ch0"]
+[ext_resource type="Texture2D" uid="uid://docuua8xy4n1h" path="res://Asset/WorldSprites/BiomeAlive/Platforms/PlatformDebris1.png" id="2_gyktj"]
+
+[node name="LifeRubble" type="Node2D" unique_id=1402296676]
+script = ExtResource("1_01ch0")
+
+[node name="PlatformDebris1" type="Sprite2D" parent="." unique_id=1060026835]
+position = Vector2(40858, 1124.9999)
+scale = Vector2(0.99999994, 0.99999994)
+texture = ExtResource("2_gyktj")

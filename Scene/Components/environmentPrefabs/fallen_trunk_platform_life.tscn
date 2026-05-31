@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://ba234ehsm6fgf"]
+
+[ext_resource type="Script" uid="uid://exj4pmtw34at" path="res://Scripts/WorldManagement/WorldSwap.gd" id="1_piwky"]
+[ext_resource type="Texture2D" uid="uid://yhbjrin6iewb" path="res://Asset/WorldSprites/BiomeAlive/Platforms/Platform6.png" id="2_gcufg"]
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_kdnde"]
+a = Vector2(-341.5, -51)
+b = Vector2(308.5, -120)
+
+[node name="FallenTrunkPlatformLife" type="StaticBody2D" unique_id=1616582209]
+scale = Vector2(0.19999999, 0.19999999)
+script = ExtResource("1_piwky")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=117126880]
+position = Vector2(19.5, 56)
+shape = SubResource("SegmentShape2D_kdnde")
+
+[node name="Platform6" type="Sprite2D" parent="." unique_id=1424272993]
+position = Vector2(-14, -14)
+texture = ExtResource("2_gcufg")

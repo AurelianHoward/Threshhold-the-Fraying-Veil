@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://gycys27ajacj"]
+
+[ext_resource type="Script" uid="uid://exj4pmtw34at" path="res://Scripts/WorldManagement/WorldSwap.gd" id="1_3d46a"]
+[ext_resource type="Texture2D" uid="uid://cu7ln3vf6c726" path="res://Asset/WorldSprites/BiomeAlive/Platforms/Platform5.png" id="2_6pn5b"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i14lr"]
+size = Vector2(587, 181)
+
+[node name="LifeBrickBridge" type="StaticBody2D" unique_id=370768013]
+script = ExtResource("1_3d46a")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=817036577]
+position = Vector2(87.5, 39.5)
+shape = SubResource("RectangleShape2D_i14lr")
+
+[node name="image" type="Node2D" parent="." unique_id=293613977]
+
+[node name="Platform5" type="Sprite2D" parent="image" unique_id=949845824]
+position = Vector2(107, 192)
+texture = ExtResource("2_6pn5b")

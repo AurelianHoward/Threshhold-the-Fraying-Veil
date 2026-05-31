@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://cu550kvxg6kck"]
+
+[ext_resource type="Script" uid="uid://exj4pmtw34at" path="res://Scripts/WorldManagement/WorldSwap.gd" id="1_v4e7w"]
+[ext_resource type="Texture2D" uid="uid://dcnt8wnoajsa" path="res://Asset/WorldSprites/BiomeDead/PlatformsDead/Platform7_dead.png" id="2_2axqn"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_48ekd"]
+size = Vector2(587, 164)
+
+[node name="DeadLogBridge1A" type="StaticBody2D" unique_id=2141127687]
+visible = false
+scale = Vector2(0.19999999, 0.19999999)
+script = ExtResource("1_v4e7w")
+
+[node name="Platform7Dead" type="Sprite2D" parent="." unique_id=1675365292]
+texture = ExtResource("2_2axqn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2070742209]
+position = Vector2(24.5, 56)
+shape = SubResource("RectangleShape2D_48ekd")

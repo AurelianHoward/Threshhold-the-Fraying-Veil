@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://b1w2wda7k5h3m"]
+
+[ext_resource type="Texture2D" uid="uid://byk8o0fh0pvwr" path="res://Asset/WorldSprites/BiomeDead/PlatformsDead/Platform3_dead.png" id="1_75yog"]
+[ext_resource type="Script" uid="uid://exj4pmtw34at" path="res://Scripts/WorldManagement/WorldSwap.gd" id="1_a61kh"]
+[ext_resource type="Texture2D" uid="uid://db6wiqclflr6i" path="res://Asset/WorldSprites/BiomeDead/VegetationDead/Grass1_dead.png" id="2_a61kh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_42iax"]
+size = Vector2(1871, 658)
+
+[node name="DeathPlatform1a" type="StaticBody2D" unique_id=1262138642]
+script = ExtResource("1_a61kh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1473117649]
+shape = SubResource("RectangleShape2D_42iax")
+
+[node name="Platform3Dead" type="Sprite2D" parent="." unique_id=190729422]
+texture = ExtResource("1_75yog")
+
+[node name="Grass1Dead" type="Sprite2D" parent="." unique_id=1490303765]
+position = Vector2(18, -303)
+texture = ExtResource("2_a61kh")

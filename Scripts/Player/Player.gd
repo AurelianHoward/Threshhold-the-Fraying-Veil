@@ -40,6 +40,7 @@ var dash_timer: float = 0.0
 var is_wall_sliding: bool = false
 var facing_direction: float = 1.0
 
+
 func _ready() -> void:
 	animated_sprite.animation_finished.connect(_on_animation_finished)
 	animated_sprite.play("Idle") 
@@ -82,7 +83,7 @@ func _physics_process(delta: float) -> void:
 
 func _handle_movement() -> void:
 	var input_direction: Vector2 = Input.get_vector("Mleft","Mright", "Mup", "Mdown")
-	velocity.x = input_direction.x * move_speed
+	###velocity.x = 
 
 func _handle_jump() -> void:
 	if jump_buffer_timer > 0 and coyote_timer > 0:
@@ -94,7 +95,7 @@ func _handle_dash_input() -> void:
 	if Input.is_action_just_pressed("Mdash") and not is_dashing:
 		is_dashing = true
 		dash_timer = dash_duration
-		velocity.x = facing_direction * dash_speed
+		velocity.x = direction * dash_speed
 		velocity.y = 0
 
 func _handle_dash(delta: float) -> void:
